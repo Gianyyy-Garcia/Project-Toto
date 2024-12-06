@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="todo-app">
+        <h2>To-Do List <img src="images/TASK.png" width="35" height="35"> </h2>
+        
+        <!-- Task input and priority selection -->
+        <div class="row">
+            <input type="text" id="input-box" placeholder="Add your text" aria-label="Task input field">
+            
+            <!-- Priority selection dropdown -->
+            <select id="priority-selector">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <button onclick="addTask()">Add</button>
+        </div>
+
+        <!-- Task list container -->
+        <ul id="list-container">
+            <!--<li class="checked">Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li> -->
+        </ul>
+
+        <!-- Clear All button -->
+        <button onclick="clearAllTasks()">Clear All</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
