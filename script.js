@@ -51,6 +51,7 @@ listContainer.addEventListener("click", (event) => {
     }
 }, false); // GIAN //
 
+// KELLY //
 // Function to save tasks to local storage
 function saveData() {
     // Collect all tasks from the list container
