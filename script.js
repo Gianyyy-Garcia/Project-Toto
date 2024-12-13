@@ -36,29 +36,44 @@ listContainer.addEventListener("click", function(e) {
     }
 }, false); // GIAN //
 
-function saveData() { // KELLY //
+// Function to save tasks to local storage
+function saveData() {
+    // Collect all tasks from the list container
     const tasks = [];
     const items = listContainer.getElementsByTagName("li");
-    for (let item of items) {
-        tasks.push(item.innerHTML);
+
+    for (const item of items) {
+        tasks.push(item.textContent.trim()); // Use textContent for plain text
     }
-    localStorage.setItem("data", JSON.stringify(tasks));
+
+    // Save the tasks array to local storage as a JSON string
+    localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
-function showTask() {
-    const tasks = JSON.parse(localStorage.getItem("data"));
-    if (tasks) {
-        tasks.forEach(task => {
-            let li = document.createElement("li");
-            li.innerHTML = task;
-            listContainer.appendChild(li);
-        });
-    }
-}
+// Function to load tasks from local storage and display them
+function showTasks() {
+    // Retrieve tasks from local storage and parse them
+    const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
-function clearAllTasks() {
+    // Clear the current list to avoid duplication
     listContainer.innerHTML = '';
+
+    // Create list items for each task and append them to the container
+    tasks.forEach(task => {
+        const li = document.createElement("li");
+        li.textContent = task; // Use textContent to avoid injecting HTML
+        listContainer.appendChild(li);
+    });
+}
+
+// Function to clear all tasks from the list and local storage
+function clearAllTasks() {
+    // Clear the list container in the DOM
+    listContainer.innerHTML = '';
+
+    // Update local storage to remove all tasks
     saveData();
 }
 
-showTask(); // KELLY //
+// Initialize the task list by showing saved tasks
+showTasks(); //KELLY//
