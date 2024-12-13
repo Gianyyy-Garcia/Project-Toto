@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+HEAD
 * {  /* KIRBY */
     margin: 0;
     padding: 0;
@@ -230,28 +230,29 @@ button.clear-all:hover {
     margin-bottom: 25px;
 } /* BUITIZON */
 
-input { /* JANO */
+input {/*Jano*/
     flex: 1;
     border: none;
     outline: none;
     background: transparent;
     padding: 10px;
-    font-weight: 14px;
+    font-size: 14px;
 }
 
 button {
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #ff5945;
+    background: #4579ff;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #ff4028;
+    background-color: #285aff;
 }
 
 ul {
@@ -271,46 +272,43 @@ ul li {
     align-items: center;
     border-radius: 8px;
     margin-bottom: 12px;
-    background-color: #fff; /* Default background color */
-    box-sizing: border-box; /* Ensure everything fits inside */
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
 ul li:hover {
-    background-color: #f5f5f5;
+    background-color: #eef5ff;
     transform: scale(1.05);
 }
 
-/* Low Priority - Soft Green */
+/* Priority Styling */
 li.low {
-    background-color: #d4f1e0; /* Lighter pastel green */
-    border-left: 5px solid #4caf50; /* Green border for emphasis */
+    background-color: #e0f1d4;
+    border-left: 5px solid #4caf50;
 }
 
-/* Medium Priority - Soft Yellow */
 li.medium {
-    background-color: #fff9c4; /* Lighter pastel yellow */
-    border-left: 5px solid #ffeb3b; /* Yellow border for emphasis */
+    background-color: #fff5c4;
+    border-left: 5px solid #ffeb3b;
 }
 
-/* High Priority - Soft Coral */
 li.high {
-    background-color: #ffccd5; /* Lighter pastel coral */
-    border-left: 5px solid #f44336; /* Red border for emphasis */
+    background-color: #ffd4cc;
+    border-left: 5px solid #f44336;
 }
 
 /* Date and Time Styling */
 .task-time {
     font-size: 0.8em;
-    color: #888;
-    font-style: normal;
+    color: #666;
     display: inline-block;
     text-align: center;
     white-space: nowrap;
-    margin-left: 20px; /* Space before time */
-    padding-left: 10px; /* Some spacing from task name */
-    flex-shrink: 0; /* Prevent shrinking of the date/time */
-    text-align: center;
-    min-width: 250px; /* Ensure enough space for the time */
+    margin-left: 20px;
+    padding-left: 10px;
+    flex-shrink: 0;
+    min-width: 250px;
 }
 
 /* Checkbox and Task Layout */
@@ -323,8 +321,9 @@ ul li::before {
     background-image: url(images/UNCHECKED.png);
     background-size: cover;
     background-position: center;
-    top: 12px;
+    top: 50%;
     left: 8px;
+    transform: translateY(-50%);
 }
 
 ul li.checked {
@@ -339,7 +338,7 @@ ul li.checked::before {
 ul li span {
     position: absolute;
     right: 0;
-    top: 5px;
+    top: 50%;
     width: 40px;
     height: 40px;
     font-size: 22px;
@@ -347,26 +346,29 @@ ul li span {
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
+    transform: translateY(-50%);
 }
 
 ul li span:hover {
-    background: #edeef0;
+    background: #ddeef0;
 }
 
 input:focus {
-    border-color: #4e086f;
+    border-color: #2c4eff;
 }
 
 /* Clear All button styles */
 button.clear-all {
-    background-color: #e74c3c;
+    background-color: #e44c4c;
     margin-top: 20px;
     padding: 10px 20px;
     width: 100%;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button.clear-all:hover {
-    background-color: #c0392b;
-} /* JANO */
+    background-color: #c02b2b;
+}
+/*Jano*/
