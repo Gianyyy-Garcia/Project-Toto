@@ -1,4 +1,4 @@
-* {
+* {  /* KIRBY */
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -31,9 +31,9 @@
 .todo-app h2 img {
     width: 30px;
     margin-left: 10px;
-}
+} 
 
-.row {
+.row { 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -50,9 +50,9 @@ input {
     background: transparent;
     padding: 10px;
     font-weight: 14px;
-}
+} /* KIRBY */
 
-button {
+button { /* LEE */
     border: none;
     outline: none;
     padding: 16px 50px;
@@ -61,9 +61,9 @@ button {
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
-}
+} 
 
-button:hover {
+button:hover { 
     background-color: #ff4028;
 }
 
@@ -86,9 +86,9 @@ ul li {
     margin-bottom: 12px;
     background-color: #fff; /* Default background color */
     box-sizing: border-box; /* Ensure everything fits inside */
-}
+} /* LEE */
 
-ul li:hover {
+ul li:hover { /* EMMAN */
     background-color: #f5f5f5;
     transform: scale(1.05);
 }
@@ -97,9 +97,9 @@ ul li:hover {
 li.low {
     background-color: #d4f1e0; /* Lighter pastel green */
     border-left: 5px solid #4caf50; /* Green border for emphasis */
-}
+} /* EMMAN */
 
-/* Medium Priority - Soft Yellow */
+/* Medium Priority - Soft Yellow */ /* BUITIZON */
 li.medium {
     background-color: #fff9c4; /* Lighter pastel yellow */
     border-left: 5px solid #ffeb3b; /* Yellow border for emphasis */
@@ -124,9 +124,9 @@ li.high {
     flex-shrink: 0; /* Prevent shrinking of the date/time */
     text-align: center;
     min-width: 250px; /* Ensure enough space for the time */
-}
+} /* EMMAN */
 
-/* Checkbox and Task Layout */
+/* Checkbox and Task Layout */   /* BUITIZON */
 ul li::before {
     content: '';
     position: absolute;
@@ -147,9 +147,9 @@ ul li.checked {
 
 ul li.checked::before {
     background-image: url(images/CHECKED.png);
-}
+} /* BUITIZON */
 
-ul li span {
+ul li span { /* JANO */
     position: absolute;
     right: 0;
     top: 5px;
@@ -182,4 +182,4 @@ button.clear-all {
 
 button.clear-all:hover {
     background-color: #c0392b;
-}
+} /* JANO */

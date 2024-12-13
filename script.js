@@ -1,4 +1,4 @@
-const inputBox = document.getElementById("input-box");
+const inputBox = document.getElementById("input-box"); // GIAN //
 const listContainer = document.getElementById("list-container");
 
 function addTask() {
@@ -34,9 +34,9 @@ listContainer.addEventListener("click", function(e) {
         e.target.parentElement.remove();
         saveData();
     }
-}, false);
+}, false); // GIAN //
 
-function saveData() {
+function saveData() { // KELLY //
     const tasks = [];
     const items = listContainer.getElementsByTagName("li");
     for (let item of items) {
@@ -61,4 +61,4 @@ function clearAllTasks() {
     saveData();
 }
 
-showTask();
+showTask(); // KELLY //
