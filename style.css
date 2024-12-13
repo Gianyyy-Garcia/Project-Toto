@@ -96,8 +96,8 @@ ul li:hover {  /* LEE */
 
 /* Low Priority - Soft Green */
 li.low {
-    background-color: #d4f1e0; /* Lighter pastel green */
-    border-left: 5px solid #4caf50; /* Green border for emphasis */
+    background-color: #e8f4d8; /* Light pastel green for a softer look */
+    border-left: 5px solid #6a1f9a; /* Thin, deep purple border for contrast */
 } /* EMMAN */
 
 /* Medium Priority - Soft Yellow */ /* BUITIZON */
